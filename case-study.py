@@ -7,8 +7,8 @@ from score import scoreIC, Y, SobolT, sobols, IE
 from simulation import simulationIC, simulationLT
 import statistics as s
 
-g, config = Cora()
-# g, config = CiteSeer()
+# g, config = Cora()
+g, config = CiteSeer()
 # g, config = PubMed()
 # g, config = ER()
 # g, config = connSW()

@@ -345,7 +345,7 @@ def greedyLT(g, config, budget):
                 iterations = model_temp.iteration_bunch(5)
 
                 total_no = iterations[4]['node_count'][1]
-                input.append(total_no)
+                result.append(total_no)
 
             if s.mean(result) > max:
                 max = s.mean(result)
@@ -609,7 +609,7 @@ def SoboldegLT(g, config, budget):
         g_deg.remove_node(selected)
 
     for j in range(budget):
-        df = simulationLT(1, g, deg, config)
+        df = simulationLT(10, g, deg, config)
         ST = SobolT(df, deg)
         rank = []
         for node in sorted(ST, key=ST.get, reverse=True):
@@ -638,7 +638,7 @@ def SoboleigenLT(g, config,budget):
 
 
     for j in range(budget):
-        df = simulationLT(1, g, eig, config)
+        df = simulationLT(10, g, eig, config)
         ST = SobolT(df, eig)
         rank = []
         for node in sorted(ST, key=ST.get, reverse=True):

@@ -18,11 +18,6 @@ def connSW():
         g[a][b]['weight'] = weight
         config.add_edge_configuration("threshold", (a, b), weight)
 
-    for i in g.nodes():
-        threshold = random.randrange(1 , 20)
-        threshold = round(threshold / 100, 2)
-        config.add_node_configuration("threshold", i, threshold)
-
     return g, config
 
 def BA():
@@ -35,11 +30,6 @@ def BA():
         weight = round(weight / 100, 2)
         g[a][b]['weight'] = weight
         config.add_edge_configuration("threshold", (a, b), weight)
-
-    for i in g.nodes():
-        threshold = random.randrange(1 , 20)
-        threshold = round(threshold / 100, 2)
-        config.add_node_configuration("threshold", i, threshold)
 
     return g, config
 
@@ -57,11 +47,6 @@ def ER():
         weight = round(weight / 100, 2)
         config.add_edge_configuration("threshold", (a, b), weight)
         g[a][b]['weight'] = weight
-
-    for i in g.nodes():
-        threshold = random.randrange(1 , 20)
-        threshold = round(threshold / 100, 2)
-        config.add_node_configuration("threshold", i, threshold)
 
     return g, config
 
@@ -81,11 +66,6 @@ def CiteSeer():
         config.add_edge_configuration("threshold", (a, b), weight)
         g[a][b]['weight'] = weight
 
-    for i in g.nodes():
-        threshold = random.randrange(1 , 20)
-        threshold = round(threshold / 100, 2)
-        config.add_node_configuration("threshold", i, threshold)
-
     return g, config
 
 def PubMed():
@@ -103,11 +83,6 @@ def PubMed():
         weight = round(weight / 100, 2)
         config.add_edge_configuration("threshold", (a, b), weight)
         g[a][b]['weight'] = weight
-
-    for i in g.nodes():
-        threshold = random.randrange(1 , 20)
-        threshold = round(threshold / 100, 2)
-        config.add_node_configuration("threshold", i, threshold)
 
     return g, config
 
@@ -127,11 +102,6 @@ def Cora():
         config.add_edge_configuration("threshold", (a, b), weight)
         g[a][b]['weight'] = weight
 
-    for i in g.nodes():
-        threshold = random.randrange(1 , 20)
-        threshold = round(threshold / 100, 2)
-        config.add_node_configuration("threshold", i, threshold)
-
     return g, config
 
 def photo():
@@ -142,9 +112,6 @@ def photo():
     G = nx.from_edgelist(edges)
     g = nx.convert_node_labels_to_integers(G, first_label=0, ordering='default', label_attribute=None)
 
-    # Model Selection
-    model = ep.IndependentCascadesModel(g)
-
     config = mc.Configuration()
 
     for a, b in g.edges():
@@ -152,13 +119,6 @@ def photo():
         weight = round(weight / 100, 2)
         config.add_edge_configuration("threshold", (a, b), weight)
         g[a][b]['weight'] = weight
-
-    for i in g.nodes():
-        threshold = random.randrange(1 , 20)
-        threshold = round(threshold / 100, 2)
-        config.add_node_configuration("threshold", i, threshold)
-
-    model.set_initial_status(config)
 
     return g, config
 
@@ -170,9 +130,6 @@ def coms():
     G = nx.from_edgelist(edges)
     g = nx.convert_node_labels_to_integers(G, first_label=0, ordering='default', label_attribute=None)
 
-    # Model Selection
-    model = ep.IndependentCascadesModel(g)
-
     config = mc.Configuration()
 
     for a, b in g.edges():
@@ -180,10 +137,5 @@ def coms():
         weight = round(weight / 100, 2)
         config.add_edge_configuration("threshold", (a, b), weight)
         g[a][b]['weight'] = weight
-
-    for i in g.nodes():
-        threshold = random.randrange(1 , 20)
-        threshold = round(threshold / 100, 2)
-        config.add_node_configuration("threshold", i, threshold)
 
     return g, config
