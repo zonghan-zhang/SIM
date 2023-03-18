@@ -2,7 +2,7 @@
 
 This repository reproduces the results in the paper `Explain Influence Maximization with Sobol Indices` (Zonghan Zhang et al., SIAM Data Mining 2023), whose objective is to learn the higher-order relationship in selecting seeds in information maximization problem.
 
-
+![some discription](sim_intro.pdf)
 
 
 
