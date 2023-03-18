@@ -16,7 +16,7 @@ For empirical experiments in the paper, please refer to the files below:
 python case-study.py
 ```
 
-Our result shows that the proposed lightweighted plugin can improve SOTA model by a significant margin
+Our result shows that the proposed lightweighted plugin can improve SOTA model (red) by a significant margin (blue)
 
 [<img src="performance.png" width="500" />](performance.png)
 
