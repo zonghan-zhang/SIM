@@ -1,7 +1,7 @@
 # SIM (Sobol Information Maximization)
 
 
-This repository reproduces the results in the paper `Explain Influence Maximization with Sobol Indices` (Zonghan Zhang et al., SIAM Data Mining 2023), whose objective is to learn the higher-order relationship in selecting seeds in information maximization problem.
+This repository reproduces the results in the paper [`Understanding Influence Maximization via Higher-Order Decomposition`](https://epubs.siam.org/doi/abs/10.1137/1.9781611977653.ch86) (Zonghan Zhang et al., SIAM Data Mining 2023), whose objective is to learn the higher-order relationship in selecting seeds in information maximization problem.
 
 
 
