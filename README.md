@@ -34,7 +34,7 @@ SIM-LT.py
 If you compare with, build on, or use aspects of the SIM, please cite the following:
 ```
 @inproceedings{zhang2023sim,
-  title={Explain Influence Maximization with Sobol Indices},
+  title={Understanding Influence Maximization via Higher-Order Decomposition},
   author={Zhang, Zonghan, and Zhiqian Chen},
   booktitle={Proceedings of SIAM International Conference on Data Mining (SDM)},
   year={2023},
